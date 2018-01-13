@@ -2,9 +2,6 @@
 # - kubeadm init (at least the pre-fiight checks fail if it's already installed)
 set -ueo pipefail
 
-# Wait for apt auto-updates to get out of the way
-sleep 60
-
 # get in line
 apt update
 apt dist-upgrade -y
